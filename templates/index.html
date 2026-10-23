@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja | Flask App</title>
+    <meta name="description" content="A Flask web application">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="hero-glow"></div>
+            <h1>Welcome to <span class="gradient-text">Pooja</span></h1>
+            <p class="subtitle">Your Flask application is up and running.</p>
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Server Active
+            </div>
+        </header>
+
+        <section class="cards">
+            <div class="card">
+                <div class="card-icon">📁</div>
+                <h3>Templates</h3>
+                <p>Edit <code>templates/index.html</code> to change this page.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">🎨</div>
+                <h3>Styles</h3>
+                <p>Customize the look in <code>static/css/style.css</code>.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">⚙️</div>
+                <h3>Routes</h3>
+                <p>Add new routes in <code>app.py</code>.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
